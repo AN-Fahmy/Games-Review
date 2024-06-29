@@ -9,12 +9,12 @@ async function detailsPage(){
     /*########### Close Page By Escape ###########*/
     $(document).on('keydown',function(e){
         if(e.key == "Escape"){
-            location.href = 'index.html'
+            location.href = './index.html'
         }
     })
     /*########### Close Page By Exit (X) ###########*/
     $('.head-details i').on('click', function(){
-        location.href = 'index.html'
+        location.href = './index.html'
     })
     return allDetails
 }
