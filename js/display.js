@@ -26,7 +26,7 @@ export class Games{
             for (let i = 0; i < response.length; i++) {
                 box += `
                     <div class="col-lg-4 col-md-6">
-                        <div data-id='${response[i].id}' class="game-info text-center text-white rounded-3 overflow-hidden animate__animated animate__fadeInUp">
+                        <div data-id='${response[i].id}' class="game-info text-center text-white rounded-3 overflow-hidden">
                             <div class="overlay position-absolute top-0 w-100 h-100 d-flex justify-content-start align-items-center fw-bold flex-column gap-5">
                                 <div class="image-content text-center w-100">
                                     <img class="w-100 rounded-3" src="${response[i].thumbnail}" alt="${response[i].title}">

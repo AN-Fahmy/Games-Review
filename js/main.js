@@ -24,7 +24,7 @@ async function homeGame(category = 'mmorpg'){
             })
         } else{
             $('nav').css({
-                'background-color': '#14111471',
+                'background-color': '#00000063',
                 'box-shadow':'none' 
             })
         }
