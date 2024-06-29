@@ -1,0 +1,468 @@
+*{
+    transition: all .4s !important;
+}
+/* Start Scroll Style */
+::-webkit-scrollbar {
+    width: 10px;
+	background-color: #141114;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+}
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: #a8a8a8; 
+	height: 50px;
+    border-radius: 10px;
+}
+/* End Scroll Style */
+body{
+    background-image:linear-gradient(to right, rgba(0,0,0,.5) 50%,rgba(0,0,0,.5) 100%),url('../image/animated-gifs-of-fighting-game-backgrounds-27.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	font-family: "Comfortaa", sans-serif;
+}
+@media (max-width: 1200px) {
+    body{
+        background-position-x: 48%;
+    }
+}
+a{
+    color: inherit !important;
+    transition: all .3s !important;
+	font-family: "Nerko One", cursive !important;
+	font-size: 18px !important;
+	cursor: pointer;
+
+}
+h1,h2,h3,h4,h5,h6{
+	font-family: "Caveat", cursive !important;
+	font-weight: bold;
+}
+/* Start Home Page Style */
+.navbar{
+    background-color: #14111471;
+}
+.navbar .navbar-brand{
+    font-size: 25px !important;
+}
+.navbar-toggler-icon{
+    background: none;
+}
+.active{
+    color: #09c !important;
+}
+.nav-link:hover{
+    color: #09c !important;
+}
+.game-info{
+    transition: transform .5s, filter .3s 0.1s;
+    filter: grayscale(50%);
+    box-shadow: 0 0 3px 3px #fff;
+	height: 500px;
+    cursor: pointer;
+}
+.game-info:hover{
+    filter: grayscale(0);
+}
+.overlay{
+	background-color: #141114;
+	background-image: 	linear-gradient(335deg, black 23px, transparent 23px),
+						linear-gradient(155deg, black 23px, transparent 23px),
+						linear-gradient(335deg, black 23px, transparent 23px),
+						linear-gradient(155deg, black 23px, transparent 23px);
+	background-size: 58px 58px;
+	background-position: 0px 2px, 4px 35px, 29px 31px, 34px 6px;
+	left: 0;
+	opacity: 1;
+	transition: all .5s;
+}
+.game-info:hover .overlay{
+	left: -100%;
+	opacity: 0;
+}
+.overlay-content h1{
+	background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
+	background-size: cover;
+	color: transparent;
+	-moz-background-clip: text;
+	-webkit-background-clip: text;
+	text-transform: uppercase;
+	font-size: 30px;
+	text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+    -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+    0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+	animation: shine 2s forwards, flicker 3s infinite;
+}
+.sign { 
+	background-image: radial-gradient(
+		ellipse 50% 35% at 50% 50%,
+		#50464a,
+		transparent
+	);
+	letter-spacing: 2;
+	font-family: "Caveat", cursive !important;
+	text-transform: uppercase;
+	font-size: 6em;
+	font-weight: bold;
+	color: #3f3f3f;
+	text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #221e20,
+		-0.2rem 0.1rem 1rem #3b3b3b, 0.2rem 0.1rem 1rem #3b3438,
+		0 -0.5rem 2rem #574f53, 0 0.5rem 3rem #2c2c2c;
+	animation: shine 2s forwards, flicker 3s infinite;
+}
+@media (max-width:325px) {
+	.sign {
+		font-size: 70px;
+		margin-top: 70px !important;
+	}
+}
+@keyframes blink {
+0%,
+22%,
+36%,
+75% {
+	color: #ffe6ff;
+	text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #5a5156,
+	-0.2rem 0.1rem 1rem rgba(77, 25, 25, 0.699), 0.2rem 0.1rem 1rem #09c,
+	0 -0.5rem 2rem #574f53, 0 0.5rem 3rem #221e20;
+}
+28%,
+33% {
+	color: #3b3438;
+	text-shadow: none;
+}
+82%,
+97% {
+	color: #696969;
+	text-shadow: none;
+}
+}
+.flicker {
+animation: shine 2s forwards, blink 3s 2s infinite;
+}
+.fast-flicker {
+animation: shine 2s forwards, blink 10s 1s infinite;
+}
+@keyframes shine {
+	0% {
+        color: #3f3f3f;
+        text-shadow: none;
+	}
+	100% {
+        color: #ffe6ff;
+        text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #5e4a54,
+            -0.2rem 0.1rem 1rem #553f4a, 0.2rem 0.1rem 1rem #66525d,
+            0 -0.5rem 2rem #574f53, 0 0.5rem 3rem #494446;
+	}
+}
+@keyframes flicker {
+from {
+	opacity: 1;
+}
+
+4% {
+	opacity: 0.9;
+}
+
+6% {
+	opacity: 0.85;
+}
+
+8% {
+	opacity: 0.95;
+}
+
+10% {
+	opacity: 0.9;
+}
+
+11% {
+	opacity: 0.922;
+}
+
+12% {
+	opacity: 0.9;
+}
+
+14% {
+	opacity: 0.95;
+}
+
+16% {
+	opacity: 0.98;
+}
+
+17% {
+	opacity: 0.9;
+}
+
+19% {
+	opacity: 0.93;
+}
+
+20% {
+	opacity: 0.99;
+}
+
+24% {
+	opacity: 1;
+}
+
+26% {
+	opacity: 0.94;
+}
+
+28% {
+	opacity: 0.98;
+}
+
+37% {
+	opacity: 0.93;
+}
+
+38% {
+	opacity: 0.5;
+}
+
+39% {
+	opacity: 0.96;
+}
+
+42% {
+	opacity: 1;
+}
+
+44% {
+	opacity: 0.97;
+}
+
+46% {
+	opacity: 0.94;
+}
+
+56% {
+	opacity: 0.9;
+}
+
+58% {
+	opacity: 0.9;
+}
+
+60% {
+	opacity: 0.99;
+}
+
+68% {
+	opacity: 1;
+}
+
+70% {
+	opacity: 0.9;
+}
+
+72% {
+	opacity: 0.95;
+}
+
+93% {
+	opacity: 0.93;
+}
+
+95% {
+	opacity: 0.95;
+}
+
+97% {
+	opacity: 0.93;
+}
+
+to {
+	opacity: 1;
+}
+}
+.text{
+	box-shadow: inset 0 0 5px 5px #fff;
+	background-color: rgba(0,0,0,.5);
+}
+.opt{
+	font-family: "Nerko One", cursive !important;
+	font-style: italic;
+	font-weight: 100;
+	font-size: 18px;
+}
+audio{
+	top: -100%;
+	left: -100%;
+}
+/* End Home Page Style */
+
+/* Start Details style */
+.head-details h1{
+    letter-spacing: 1.5px;
+}
+.head-details i{
+    cursor: pointer;
+}
+.head-details i:hover{
+	color: #09c;
+}
+.image-Details{
+	box-shadow: 0 0 5px 5px #444444;
+}
+h5 span,ol li{
+	font-family: "Nerko One", cursive !important;
+	font-style: italic;
+	font-weight: 100;
+	font-size: 18px;
+	letter-spacing: 2px;
+	color: #09c;
+}
+ol li a{
+    color: #fff !important;
+}
+.breadcrumb-item::before{
+	color: #fff !important;
+}
+.show-game{
+    background-color: transparent;
+    position: relative;
+    outline: none;
+    border: 2px solid #09c;
+    width: 150px;
+    height: 60px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    color: #fff;
+    -webkit-box-reflect: below 0px linear-gradient(transparent, #002);
+    transition: .5s;
+    transition-delay: 0s;
+}
+.show-game:hover{
+    transition-delay: 1.5s;
+    font-weight: bold;
+    color: #000;
+    box-shadow: 0 0 10px #09c,
+                0 0 20px #09c,
+                0 0 40px #09c,
+                0 0 80px #09c,
+                0 0 100px #09c;
+}
+.show-game a{
+    position: relative;
+    z-index: 100;
+	text-decoration: none;
+	font-size: 20px !important;
+
+}
+.show-game::before{
+    content: "";
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 2px;
+    background-color: #09c;
+    box-shadow: 5px -8px 0 #09c,
+                5px 8px 0 #09c;
+    transition: width 0.5s,
+                left 0.5s, 
+                height 0.5s,
+                box-shadow 0.5s;
+    transition-delay: 1s, 0.5s, 0s, 0s;
+}
+.show-game:hover::before{
+    width: 60%;
+    height: 100%;
+    left: -2px;
+    box-shadow: 5px 0 0 #09c, 5px 0 0 #09c;
+    transition-delay: 0s, 0.5s, 1s, 1s;
+}
+.show-game::after{
+    content: "";
+    position: absolute;
+    right: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 2px;
+    background-color: #09c;
+    box-shadow: -5px -8px 0 #09c,
+                -5px 8px 0 #09c;
+    transition: width 0.5s,
+                right 0.5s, 
+                height 0.5s,
+                box-shadow 0.5s;
+    transition-delay: 1s, 0.5s, 0s, 0s;
+}
+.show-game:hover::after{
+    width: 60%;
+    height: 102%;
+    right: -2px;
+    box-shadow: -5px 0 0 #09c, -5px 0 0 #09c;
+    transition-delay: 0s, 0.5s, 1s, 1s;
+}
+/* End Details style */
+
+/* Start Loading Style */
+.loading{
+    background-color: rgba(0,0,0,.9);
+}
+.loader {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    border: 3px solid;
+    border-color: #FFF #FFF transparent transparent;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+.loader::after,
+.loader::before {
+    content: '';  
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    border: 3px solid;
+    border-color: transparent transparent #FF3D00 #FF3D00;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    animation: rotationBack 0.5s linear infinite;
+    transform-origin: center center;
+}
+.loader::before {
+    width: 40px;
+    height: 40px;
+    border-color: #FFF #FFF transparent transparent;
+    animation: rotation 1.5s linear infinite;
+}
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+} 
+@keyframes rotationBack {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+/* Start Loading Style */

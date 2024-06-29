@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="image/logo-sm.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Comfortaa:wght@300..700&family=Nerko+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>GAME REVIEWS</title>
+</head>
+<body class="overflow-x-hidden">
+    <nav class="navbar animate__animated animate__backInDown w-100 position-fixed top-0 navbar-expand-lg text-white z-3">
+        <div class="container">
+            <a class="navbar-brand text-white" href="index.html"><img class="w-25" src='image/logo-sm.png' alt="logo"> GAME REVIEWS</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon d-flex justify-content-center align-items-center"><i class="fa-solid fa-bars text-white fs-3"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item active" data-category="mmorpg">
+                        <a class="nav-link" aria-current="page">MMORPG</a>
+                    </li>
+                    <li class="nav-item" data-category="shooter">
+                        <a class="nav-link">SHOOTER</a>
+                    </li>
+                    <li class="nav-item" data-category="sailing">
+                        <a class="nav-link">SAILING</a>
+                    </li>
+                    <li class="nav-item" data-category="permadeath">
+                        <a class="nav-link">PERMADEATH</a>
+                    </li>
+                    <li class="nav-item" data-category="pixel">
+                        <a class="nav-link">PIXEL</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="sign mt-5 pt-5 d-flex justify-content-center align-items-center">
+        <span class="fast-flicker">G</span>am<span class="flicker">e</span>s
+    </div>
+
+    <section class="home my-3" id="home">
+        <div class="container">
+            <div class="row g-4" id="rowData"></div>
+        </div>
+    </section>
+
+    <div class="loading position-fixed start-0 top-0 bottom-0 end-0 d-flex justify-content-center align-items-center">
+        <span class="loader"></span>
+    </div>
+
+    <audio autoplay hidden>
+        <source src="image/mixkit-epical-drums-01-676.mp3" type="audio/mpeg">
+    </audio>
+    
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
